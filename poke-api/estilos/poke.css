@@ -1,0 +1,29 @@
+body {
+    background-color: gray;
+    color: black;
+    margin: 0;
+    font-family: Ranchers;
+}
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+}
+
+
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+
+    80% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
