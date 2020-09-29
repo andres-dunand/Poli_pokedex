@@ -10,15 +10,7 @@ body {
     font-family: Ranchers;
 }
 
-.main{
 
-    background-image: url(../img/fondo2.png);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  
-}
 
 
 .container {
@@ -29,18 +21,4 @@ body {
 
 
 
-@keyframes bounce {
-    20% {
-        transform: translateY(-6px);
-    }
-    40% {
-        transform: translateY(0px);
-    }
 
-    80% {
-        transform: translateY(-2px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
