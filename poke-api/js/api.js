@@ -1,7 +1,12 @@
 
 
 const fetchPokedex = () =>{
-       const url = `https://pokeapi.co/api/v2/pokemon/1`;
+
+    for (let cont = 1; cont <=10 ;cont ++) 
+    {
+        
+       const url = `https://pokeapi.co/api/v2/pokemon/${cont}`;
+
        fetch(url)
             .then(res =>{
                 return res.json();
@@ -20,7 +25,7 @@ const fetchPokedex = () =>{
                  console.log(datapoke);            
 
             })
-
+    }
 
 }
 
