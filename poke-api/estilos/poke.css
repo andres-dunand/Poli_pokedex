@@ -1,11 +1,28 @@
 body {
-    background-color: gray;
+    background-image: url(../img/fondo2.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
     color: black;
     margin: 0;
     font-family: Ranchers;
 }
 
+.main{
+
+    background-image: url(../img/fondo2.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+}
+
+
 .container {
+
     padding: 40px;
     margin: 0 auto;
 }

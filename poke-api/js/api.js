@@ -7,13 +7,18 @@ const fetchPokedex = () =>{
                 return res.json();
             })
              .then(data =>{ console.log(data);
-               const datapoke ={};
-                    datapoke['Nombre']=data.name;
-                    datapoke['Orden']=data.order;
-                    datapoke['Peso']=data.weight;
-                    datapoke['Imagen']=data.sprites['front_shiny'];
-            
-                console.log(datapoke);
+
+               const datapoke ={
+
+                    Nombre: data.name,
+                    Orden: data.order,
+                    Peso: data.weight,
+                    Imagen: data.sprites['front_shiny'],
+                    type: data.types.map((type)=> type.type.name).join(',')
+               };
+
+                 console.log(datapoke);            
+
             })
 
 
