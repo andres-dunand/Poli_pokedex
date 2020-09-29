@@ -7,7 +7,7 @@ const fetchPokedex = () =>{
 
     const promise =[];
 
-    for (let cont = 1; cont <=10 ;cont ++)
+    for (let cont = 1; cont <=150 ;cont ++)
     {
        const url = `https://pokeapi.co/api/v2/pokemon/${cont}`;
        promise.push(fetch(url).then((res) => res.json()));
@@ -15,11 +15,15 @@ const fetchPokedex = () =>{
 
     Promise.all(promise).then((results)=>{
 
-            const datapoke = results.map((data) => ({          
+            const datapoke = results.map((data) => ({  
+                    Ident: data.id,
                     Nombre: data.name,
-                    Orden: data.order,
+                    Altura: data.height,
                     Peso: data.weight,
-                    Imagen: data.sprites['front_shiny'],
+                    Imagenfp: data.sprites['front_default'],
+                    Imagenbp: data.sprites['back_default'],
+                    ImagenfSh: data.sprites['front_shiny'],
+                    ImagenbSh: data.sprites['back_shiny'],
                     type: data.types.map((type)=> type.type.name).join(',')
             }));
 
@@ -34,10 +38,16 @@ const fetchPokedex = () =>{
             .map( 
                 (pokesource) => `
 
+            <h2>${pokesource.Ident} </h2>
 
-            <img src="${pokesource.Imagen}"/>
-            <h2>${pokesource.Orden}. ${pokesource.Nombre} </h2>
+            <img src="${pokesource.Imagenfp}"/>
+            <img src="${pokesource.Imagenbp}"/>
+            <img src="${pokesource.ImagenfSh}"/>
+            <img src="${pokesource.ImagenbSh}"/>
+            <h2>${pokesource.Nombre} </h2>
             <p>Type: ${pokesource.type}</p>
+            <p>Peso: ${pokesource.Peso}Kg</p>
+            <p>Altura: ${pokesource.Altura}m</p>
         </li>
     `
         )
