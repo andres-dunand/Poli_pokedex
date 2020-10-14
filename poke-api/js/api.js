@@ -41,9 +41,7 @@ const fetchPokedex = () =>{
             <h2>${pokesource.Ident} </h2>
 
             <img src="${pokesource.Imagenfp}"/>
-            <img src="${pokesource.Imagenbp}"/>
-            <img src="${pokesource.ImagenfSh}"/>
-            <img src="${pokesource.ImagenbSh}"/>
+
             <h2>${pokesource.Nombre} </h2>
             <p>Type: ${pokesource.type}</p>
             <p>Peso: ${pokesource.Peso}Kg</p>
