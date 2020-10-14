@@ -7,6 +7,16 @@ body {
     font-family: Ranchers;
 }
 
+/////////////////////////////////////////////////////////////////////
+.titulo {       
+            width: 100%;
+            text-shadow: 2px 2px 2px #808B96;
+            margin-left: 10px;
+            font-size: 1.2em;
+            text-align: center;
+      }
+/////////////////////////////////////////////////////////////////////
+
 .container {
     padding: 40px;
     margin: 0 auto;
@@ -69,18 +79,21 @@ h1 {
 
 /////////////////////////////////////7
 .c3{
-        width: 100%;
-        display: flex;
-                    background-color: #D3D3D3;
-
+    width: 100%;
     }
 
         .kanto {
-            width: 50%;
+   display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
         }
 
         .johto {
-            width: 50%;
+   display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
         }
 
 
