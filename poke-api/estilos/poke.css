@@ -33,6 +33,8 @@ h1 {
     background-color: #D6EAF8;
     color: #222;
     text-align: center;
+    border-width:5px 5px 5px 5px;
+    border-style: solid;
 }
 
 .oval:hover {
@@ -65,11 +67,54 @@ h1 {
     height: 200px;
 }
 
-.kanto{
-    width: 20%;
-    height: 20%;
-}
+/////////////////////////////////////7
+.c3{
+        width: 100%;
+        display: flex;
 
+    }
+
+        .kanto {
+            width: 50%;
+        }
+
+        .johto {
+            width: 50%;
+        }
+
+
+            #Region_kanto img{
+            border-color: black;
+            border-width:0px 3px 3px 0px;
+            border-style: solid; 
+            width: 50%;
+            transition-property: border;
+            transition: all 1000ms ease-in-out;
+                 
+            }
+
+            #Region_kanto img:hover{
+            -ms-transform: rotate(10deg); /* IE 9 */
+            -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+            transform: rotate(10deg);
+            border: solid 2px #82c3a6;
+            }
+
+            #Region_johto img{
+            border-color: black;
+            border-width:0px 3px 3px 0px;
+            border-style: solid; 
+            width: 50%;
+            transition-property: border;
+            transition: all 1000ms ease-in-out;
+                 
+            }
+
+            #Region_johto img:hover{
+            -ms-transform: rotate(10deg); /* IE 9 */
+            -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+            transform: rotate(10deg);
+            border: solid 2px #82c3a6;
 
 
 @keyframes bounce {
