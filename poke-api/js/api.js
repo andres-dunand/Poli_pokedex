@@ -1,5 +1,5 @@
 
-const pokelista = document.getElementById("pokelista");
+const pokedex = document.getElementById("pokedex");
 console.log(pokedex);
 
 

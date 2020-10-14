@@ -1,5 +1,7 @@
 body {
-    background-color: gray;
+
+    background: url(../img/fondo4.jpg) no-repeat center fixed;
+    background-size: 100% 100%;
     color: black;
     margin: 0;
     font-family: Ranchers;
@@ -16,64 +18,70 @@ h1 {
     font-size: 54px;
 }
 
-#pokelista {
+#pokedex {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 20px;
     padding-inline-start: 0;
 }
 
 .oval {
+    opacity: .6;
     border-radius: 200px 200px 200px 200px;
     list-style: none;
-    padding: 10px;
-    background-color: #f4f4f4;
+    padding: 40px;
+    background-color: #D6EAF8;
     color: #222;
     text-align: center;
 }
 
 .oval:hover {
-    animation: bounce 0.5s linear;
+    animation: bounce 1s linear;
+            opacity: 1;
 }
 
 .poke-nombre {
     text-transform: capitalize;
-    text-shadow: 10px 10px #28B463 ;
+    text-shadow: 5px 5px #808B96 ;
     margin-bottom: 0px;
     font-size: 62px;
     font-weight: normal;
 }
+
 .tipo {
     margin-top: 5px;
-    color: #666;
-    font-weight: lighter;
 }
+
 .peso {
     margin-top: 5px;
-    color: #666;
-    font-weight: lighter;
+
 }
+
 .alto {
     margin-top: 5px;
-    color: #666;
-    font-weight: lighter;
 }
+
 .imagen {
     height: 200px;
 }
 
-@keyframes bounce {
-    20% {
-        transform: translateY(-6px);
-    }
-    40% {
-        transform: translateY(0px);
-    }
+.kanto{
+    width: 20%;
+    height: 20%;
+}
 
-    80% {
+
+
+@keyframes bounce {
+
+
+    50% {
         transform: translateY(-2px);
+        opacity: .8;
     }
     100% {
         transform: translateY(0);
+        opacity: 1;
     }
 }
+
