@@ -7,7 +7,7 @@ const fetchPokedex = () =>{
 
     const promise =[];
 
-    for (let cont = 1; cont <=150 ;cont ++)
+    for (let cont = 152; cont <=251 ;cont ++)
     {
        const url = `https://pokeapi.co/api/v2/pokemon/${cont}`;
        promise.push(fetch(url).then((res) => res.json()));

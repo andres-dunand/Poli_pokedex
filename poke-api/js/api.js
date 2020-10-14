@@ -7,7 +7,7 @@ const fetchPokedex = () =>{
 
     const promise =[];
 
-    for (let cont = 1; cont <=150 ;cont ++)
+    for (let cont = 1; cont <=151 ;cont ++)
     {
        const url = `https://pokeapi.co/api/v2/pokemon/${cont}`;
        promise.push(fetch(url).then((res) => res.json()));
@@ -21,9 +21,9 @@ const fetchPokedex = () =>{
                     Altura: data.height,
                     Peso: data.weight,
                     Imagenfp: data.sprites['front_default'],
-                    Imagenbp: data.sprites['back_default'],
-                    ImagenfSh: data.sprites['front_shiny'],
-                    ImagenbSh: data.sprites['back_shiny'],
+     //               Imagenbp: data.sprites['back_default'],
+     //               ImagenfSh: data.sprites['front_shiny'],
+     //               ImagenbSh: data.sprites['back_shiny'],
                     type: data.types.map((type)=> type.type.name).join(',')
             }));
 
