@@ -38,16 +38,13 @@ const fetchPokedex = () =>{
             .map( 
                 (pokesource) => `
 
-            <h2>${pokesource.Ident} </h2>
-
-            <img src="${pokesource.Imagenfp}"/>
-            <img src="${pokesource.Imagenbp}"/>
-            <img src="${pokesource.ImagenfSh}"/>
-            <img src="${pokesource.ImagenbSh}"/>
-            <h2>${pokesource.Nombre} </h2>
-            <p>Type: ${pokesource.type}</p>
-            <p>Peso: ${pokesource.Peso}Kg</p>
-            <p>Altura: ${pokesource.Altura}m</p>
+       <li class="oval">
+            <h3>${pokesource.Ident} </h3>
+            <img class="imagen" src="${pokesource.Imagenfp}"/>
+            <h1 class="poke-nombre">${pokesource.Nombre} </h1>
+            <pclass="tipo">Type: ${pokesource.type}</p>
+            <pclass="peso">Peso: ${pokesource.Peso}Kg</p>
+            <pclass="alto">Altura: ${pokesource.Altura}m</p>
         </li>
     `
         )
