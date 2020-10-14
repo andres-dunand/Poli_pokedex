@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    padding: 60px;
+    padding: 40px;
     margin: 0 auto;
 }
 
@@ -16,14 +16,14 @@ h1 {
     font-size: 54px;
 }
 
-#pokedex {
+#pokelista {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
     grid-gap: 20px;
     padding-inline-start: 0;
 }
 
-.card {
+.oval {
     border-radius: 200px 200px 200px 200px;
     list-style: none;
     padding: 10px;
@@ -32,25 +32,34 @@ h1 {
     text-align: center;
 }
 
-.Oval:hover {
+.oval:hover {
     animation: bounce 0.5s linear;
 }
 
-.oval-poke-nombre {
+.poke-nombre {
     text-transform: capitalize;
     text-shadow: 10px 10px #28B463 ;
     margin-bottom: 0px;
-    font-size: 32px;
+    font-size: 62px;
     font-weight: normal;
 }
-.oval-tipo {
+.tipo {
     margin-top: 5px;
     color: #666;
     font-weight: lighter;
 }
-
-.card-image {
-    height: 180px;
+.peso {
+    margin-top: 5px;
+    color: #666;
+    font-weight: lighter;
+}
+.alto {
+    margin-top: 5px;
+    color: #666;
+    font-weight: lighter;
+}
+.imagen {
+    height: 200px;
 }
 
 @keyframes bounce {

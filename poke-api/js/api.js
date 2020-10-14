@@ -1,5 +1,5 @@
 
-const pokedex = document.getElementById("pokedex");
+const pokelista = document.getElementById("pokelista");
 console.log(pokedex);
 
 
@@ -41,7 +41,7 @@ const fetchPokedex = () =>{
         <li class="oval">
             <h3>${pokesource.Ident} </h3>
             <img class="imagen" src="${pokesource.Imagenfp}"/>
-            <h2 class="poke-nombre">${pokesource.Nombre} </h2>
+            <h1 class="poke-nombre">${pokesource.Nombre} </h1>
             <pclass="tipo">Type: ${pokesource.type}</p>
             <pclass="peso">Peso: ${pokesource.Peso}Kg</p>
             <pclass="alto">Altura: ${pokesource.Altura}m</p>
